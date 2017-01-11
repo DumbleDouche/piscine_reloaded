@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rchoquer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rchoquer <rchoquer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 20:30:25 by rchoquer          #+#    #+#             */
-/*   Updated: 2016/11/03 20:31:56 by rchoquer         ###   ########.fr       */
+/*   Updated: 2016/11/04 20:16:55 by rchoquer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
+size_t		ft_strlen(const char *str)
 {
-	int		i;
+	size_t		i;
 
 	i = 0;
 	while (str[i])
-	{
 		i++;
-	}
 	return (i);
 }
